@@ -1,0 +1,5 @@
+def numero_de_jugadores():
+    juegan = int(input("¿Cuantas personas van a jugar?(menos de 10):"))
+    while juegan not in range(1, 11):
+        juegan = int(input("Vuelva a ingresar una cantidad de jugadores valida:"))
+    return juegan
