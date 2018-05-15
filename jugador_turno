@@ -1,0 +1,12 @@
+import random
+def jugadores_turnos(cant_jug):
+    lista_repetidos = []
+    players = {}
+    for i in range(1, cant_jug + 1):
+        jugador = input("Ingrese su nombre:")
+        turno = random.randrange(1, cant_jug+1)
+        while turno in lista_repetidos:
+            turno = random.randrange(1, cant_jug+1)
+        players[jugador] = turno
+        lista_repetidos.append(turno)
+    return players
