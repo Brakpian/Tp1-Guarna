@@ -1,6 +1,6 @@
 import diccionario_de_palabras
 import random
-def solicitar_long_palabra():
+def solicitar_palabra():
     '''Solicita la longitud de la palabra, menor a 5 caracteres y devuelve una palabra del texto con esa longitud'''
     dicc = diccionario_de_palabras.lista_diccionario(diccionario_de_palabras.texto_lista())
     long_palabra = 0
